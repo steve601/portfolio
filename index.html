@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .about-section {
+            text-align: center;
+            background: linear-gradient(to bottom, #2193b0, #6dd5ed);
+            color: #ffffff;
+            padding: 50px 20px;
+        }
+
+        .about-section h1 {
+            font-size: 3em;
+            margin-bottom: 5px;
+        }
+
+        .about-section p {
+            font-size: 1.2em;
+        }
+
+        .about-section .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #ffffff;
+            object-fit: cover;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .about-section h2 {
+            font-size: 2em;
+            color: #333;
+            background-color: #ffffff;
+            display: inline-block;
+            padding: 0 20px;
+            border-radius: 10px;
+        }
+
+        .about-section .divider {
+            width: 60%;
+            height: 2px;
+            background-color: #333;
+            margin: 20px auto;
+        }
+
+        .about-section .about-text {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1em;
+            line-height: 1.8em;
+            color: white;
+            background-color: #0f0f0f;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section .about-text p:first-child {
+            margin-bottom: 10px;
+        }
+        .projects-section {
+            background-color: #ffffff;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .projects-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #007bff;
+        }
+        .card {
+            margin: 15px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-title {
+            color: #007bff;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .skills-section {
+            background-color: #ffffff;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .skills-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #007bff;
+        }
+        .tools-section {
+            background-color: #ffffff;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .tools-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #007bff;
+        }
+
+        .contact-section {
+        background-color: #343a40;
+        color: #fff;
+        }
+        .contact-section .btn-circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #20b2aa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        .contact-section .btn-circle img {
+            width: 24px;
+            height: 24px;
+        }
+        .contact-section .btn-circle:hover {
+            background-color: #00bfff;
+        }
+        .contact-section .d-flex img {
+            width: 24px;
+            height: 24px;
+        }
+        .contact-section .d-flex p {
+            margin-bottom: 0;
+        }
+
+        .certifications-section {
+            background-color: #ffffff;
+            border-bottom: 1px solid #dee2e6;
+            padding: 50px 0;
+        }
+
+        .certifications-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #007bff;
+            text-align: center;
+        }
+
+        .certifications-section .card {
+            margin: 15px;
+            transition: transform 0.2s;
+        }
+
+        .certifications-section .card:hover {
+            transform: scale(1.05);
+        }
+
+        .certifications-section .card-title {
+            color: #007bff;
+        }
+
+        .certifications-section .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- About Section -->
+     
+<section class="about-section">
+    <div class="container text-center">
+        <h1 class="mb-0">Data Scientist</h1>
+        <p>Nairobi, Kenya</p>
+        <img src="images/about/about.jpg" alt="Profile Image" class="profile-img">
+        <h2 class="mt-4">Hey,I'm Steve</h2>
+        <hr class="divider my-4">
+        <div class="about-text">
+            <p>I'm a seasoned Data Scientist and Machine Learning Engineer adept at leveraging advanced analytics and machine learning techniques to derive actionable insights from complex datasets. With expertise in Python and SQL, I specialize in developing and deploying ML models using various algorithms and deep learning frameworks.</p>
+            <p>Passionate about continuous learning and innovation.</p>
+        </div>
+    </div>
+</section>
+
+
+
+    <section class="projects-section">
+        <h2>Projects</h2>
+        <div class="card-deck">
+            <!-- Project 1 -->
+            <div class="card">
+                <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                    <h5 class="card-title">Data Professions Salary Estimation</h5>
+                    <p class="card-text">Performed an analysis to estimate salaries for data professionals using machine learning techniques.
+                        Identified key factors influencing salary variations and used regression algorithms to forecast salaries based on historical data.</p>
+                    <a href="https://github.com/steve601/datasalaryprediction.git" class="btn btn-primary">Source Code</a>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="card">
+                <img src="images/projects/2.jpg" class="card-img-top" alt="Project 2">
+                <div class="card-body">
+                    <h5 class="card-title">Mobile Phone Recommendation</h5>
+                    <p class="card-text">Developed a personalized mobile phone recommendation system using content-based filtering techniques.
+                        Preprocessed phone information with NLP to find similarities between phones for accurate recommendations.
+                    </p>
+                    <a href="https://github.com/steve601/mobilerecommendation.git" class="btn btn-primary">Source Code</a>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="card">
+                <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
+                <div class="card-body">
+                    <h5 class="card-title">Employee Attrition</h5>
+                    <p class="card-text">Predicted employee attrition using data-driven analysis and machine learning techniques.
+                        Processed extensive datasets, identified key factors contributing to turnover,
+                        and developed predictive models to forecast attrition likelihood.</p>
+                    <a href="https://github.com/steve601/employeeAttrition.git" class="btn btn-primary">Source Code</a>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="card">
+                <img src="images/projects/4.jpg" class="card-img-top" alt="Project 4">
+                <div class="card-body">
+                    <h5 class="card-title">Airline Customer Satisfaction</h5>
+                    <p class="card-text">Conducted a comprehensive analysis of airline customer satisfaction using data-driven methodologies.
+                        Analyzed diverse datasets to uncover factors influencing passenger satisfaction and developed predictive models to forecast satisfaction levels.</p>
+                    <a href="https://github.com/steve601/airline.git" class="btn btn-primary">Source Code</a>
+                </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="card">
+                <img src="images/projects/5.png" class="card-img-top" alt="Project 5">
+                <div class="card-body">
+                    <h5 class="card-title">Spam Email Detection</h5>
+                    <p class="card-text">Developed a robust spam email detection system using machine learning techniques.
+                        Utilized NLP tools to preprocess emails, implemented supervised learning algorithms for
+                        classification, and deployed the model for real-time prediction.</p>
+                    <a href="https://github.com/steve601/spamemail.git" class="btn btn-primary">Source Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="skills-section">
+        <h2>Key skills</h2>
+        <div class="card-deck">
+            <!-- Project 1 -->
+            <div class="card">
+                <img src="images/skills/3.png" class="card-img-top" alt="Skill 1">
+                <div class="card-body">
+                    <h5 class="card-title">Python</h5>
+                    <p class="card-text">For data preprocessing and model building.</p>
+                    <a href="https://docs.python.org/3/tutorial/index.html" class="btn btn-primary">Resources</a>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="card">
+                <img src="images/skills/1.jfif" class="card-img-top" alt="Skill 2">
+                <div class="card-body">
+                    <h5 class="card-title">SQL</h5>
+                    <p class="card-text">For managing and manupilating relational databases</p>
+                    <a href="https://www.udacity.com/course/sql-for-data-analysis--ud198" class="btn btn-primary">Resources</a>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="card">
+                <img src="images/skills/2.jpg" class="card-img-top" alt="Skill 3">
+                <div class="card-body">
+                    <h5 class="card-title">Exploratory data analysis</h5>
+                    <p class="card-text">Summarizing main characteristics of the data, often with visual methods</p>
+                    <a href="https://www.analyticsvidhya.com/blog/2022/07/step-by-step-exploratory-data-analysis-eda-using-python/" class="btn btn-primary">Resources</a>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="card">
+                <img src="images/skills/4.jpg" class="card-img-top" alt="skill 4">
+                <div class="card-body">
+                    <h5 class="card-title">Machine learning and Deep learning</h5>
+                    <p class="card-text">Training algorithms to learn from and make predictions or decisions based on data.</p>
+                    <a href="https://www.coursera.org/specializations/deep-learning" class="btn btn-primary">Resources</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/skills/5.jfif" class="card-img-top" alt="Project 5">
+                <div class="card-body">
+                    <h5 class="card-title">Natural language processing</h5>
+                    <p class="card-text">Analyzing and deriving insights from text data.</p>
+                    <a href="https://www.ibm.com/topics/natural-language-processing#:~:text=What%20is%20NLP%3F,and%20communicate%20with%20human%20language." class="btn btn-primary">Resources</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="tools-section">
+        <h2>Tools</h2>
+        <div class="card-deck">
+            <div class="card">
+                <img src="images/tools/1.jpg" class="card-img-top" alt="tool 1">
+                <div class="card-body">
+                    <h5 class="card-title">Anaconda</h5>
+                    <p class="card-text">For accessing various IDEs for the whole project.</p>
+                    <a href="https://www.anaconda.com/download" class="btn btn-primary">Source</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/tools/2.png" class="card-img-top" alt="tool 2">
+                <div class="card-body">
+                    <h5 class="card-title">Git</h5>
+                    <p class="card-text">Version control system,track changes in the code</p>
+                    <a href="https://git-scm.com/" class="btn btn-primary">Source</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/tools/3.png" class="card-img-top" alt="tool 3">
+                <div class="card-body">
+                    <h5 class="card-title">MLflow</h5>
+                    <p class="card-text">For experiment tracking and model registry</p>
+                    <a href="https://mlflow.org/" class="btn btn-primary">Source</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/tools/4.webp" class="card-img-top" alt="tool 4">
+                <div class="card-body">
+                    <h5 class="card-title">Docker</h5>
+                    <p class="card-text">For managing containarized applications.</p>
+                    <a href="https://hub.docker.com/" class="btn btn-primary">Source</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/tools/5.jpg" class="card-img-top" alt="tool 5">
+                <div class="card-body">
+                    <h5 class="card-title">Amazon web service</h5>
+                    <p class="card-text">For model deployment.</p>
+                    <a href="https://aws.amazon.com/" class="btn btn-primary">Source</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="certifications-section">
+        <h2>Certifications</h2>
+        <div class="card-deck">
+            <!-- Certification 1 -->
+            <div class="card">
+                <img src="images/certifications/1.png" class="card-img-top" alt="Certification 1">
+                <div class="card-body">
+                    <h5 class="card-title">Python for Data Science</h5>
+                    <p class="card-text">Achieved certification in data science, validating skills in data analysis, machine learning, and data visualization.</p>
+                </div>
+            </div>
+            <!-- Certification 2 -->
+            <div class="card">
+                <img src="images/certifications/3.png" class="card-img-top" alt="Certification 2">
+                <div class="card-body">
+                    <h5 class="card-title">Certified Data Scientist</h5>
+                    <p class="card-text">Completed an advanced course in machine learning, covering supervised and unsupervised learning techniques.</p>
+                </div>
+            </div>
+            <!-- Certification 3 -->
+            <div class="card">
+                <img src="images/certifications/2.jfif" class="card-img-top" alt="Certification 3">
+                <div class="card-body">
+                    <h5 class="card-title">Generative AI Professional</h5>
+                    <p class="card-text">Certified in LLMs, demonstrating expertise in text preprocessing and LLM frameworks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+      
+
+    <section class="contact-section text-white bg-dark py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Let's connect</h2>
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="icons/mail.png" alt="Mail Icon" class="mr-3">
+                        <p class="mb-0">odhiambostephen057@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="icons/phone.jpg" alt="Phone Icon" class="mr-3">
+                        <p class="mb-0">+254-111-464-092</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <a href="https://www.linkedin.com/in/stephen-odhiambo-a98890308" target="_blank" class="btn btn-circle btn-pink" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+                        <img src="icons/linkedin.png" alt="LinkedIn Icon">
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="https://www.github.com/steve601" target="_blank" class="btn btn-circle btn-pink" data-toggle="tooltip" data-placement="top" title="GitHub">
+                        <img src="icons/github.jpg" alt="GitHub Icon">
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="https://medium.com/@odhiambostephen057" target="_blank" class="btn btn-circle btn-pink" data-toggle="tooltip" data-placement="top" title="Medium">
+                        <img src="icons/med.png" alt="med Icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
